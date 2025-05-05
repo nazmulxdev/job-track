@@ -1,10 +1,11 @@
 import React from "react";
+import NavBar from "../Components/NavBar";
+import Hero from "../Components/Hero";
 
 const HomePage = () => {
   return (
     <div>
-      <p>Home page</p>
-      <h1>Md nazmul hossen</h1>
+      <Hero></Hero>
     </div>
   );
 };
