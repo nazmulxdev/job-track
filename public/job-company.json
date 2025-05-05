@@ -1,0 +1,772 @@
+[
+  {
+    "id": "comp001",
+    "name": "MUL-T-LOCK Solutions",
+    "logo": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxhHo4zk0JMCaQ3LbvXIdwopq8cA1F0O5Yk4EB",
+    "location": "Chicago, IL",
+    "website": "https://technovasolutions.com",
+    "industry": "Information Technology",
+    "jobs": [
+      {
+        "id": "job0011",
+        "title": "Data Scientist",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxOjmjaZAFsTA6aKMbOSjZYwIB2mqxCH4tRgDL",
+        "location": "Chicago, IL",
+        "salary": "$66000 - $141000",
+        "jobType": "Part-time",
+        "description": "We are seeking a Data Scientist to join our team and drive impactful projects.",
+        "requirements": [
+          "Strong communication skills",
+          "Bachelor\u2019s degree in related field",
+          "Familiar with Agile methodology",
+          "Background in industry-specific tools"
+        ]
+      },
+      {
+        "id": "job0012",
+        "title": "UX/UI Designer",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxQpNLAFkkHytUn3q2lDIhx8YK4EgRAc91zPoC",
+        "location": "Chicago, IL",
+        "salary": "$64000 - $119000",
+        "jobType": "Contract",
+        "description": "We are seeking a UX/UI Designer to join our team and drive impactful projects.",
+        "requirements": [
+          "Bachelor\u2019s degree in related field",
+          "Team player and self-motivated",
+          "3+ years of relevant experience",
+          "Proficient in JavaScript and React"
+        ]
+      },
+      {
+        "id": "job0013",
+        "title": "Frontend Developer",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76Fmercx4lggOj9fhMN6OFHAcmxCkSIoegnUJbza4sqY",
+        "location": "Boston, MA",
+        "salary": "$85000 - $117000",
+        "jobType": "Part-time",
+        "description": "We are seeking a Frontend Developer to join our team and drive impactful projects.",
+        "requirements": [
+          "Proficient in JavaScript and React",
+          "Team player and self-motivated",
+          "Knowledge of cloud platforms like AWS or Azure",
+          "Familiar with Agile methodology"
+        ]
+      },
+      {
+        "id": "job0014",
+        "title": "Backend Developer",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxsnQv0sOyQsdUcKbaDIOA7t3S6zjvg0f5qrhe",
+        "location": "San Francisco, CA",
+        "salary": "$83000 - $147000",
+        "jobType": "Part-time",
+        "description": "We are seeking a Backend Developer to join our team and drive impactful projects.",
+        "requirements": [
+          "Proficient in JavaScript and React",
+          "Familiar with Agile methodology",
+          "Strong communication skills",
+          "Knowledge of cloud platforms like AWS or Azure"
+        ]
+      },
+      {
+        "id": "job0015",
+        "title": "Backend Developer",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76Fmercxthw4tI8VbzR7uHQ2cdh1oksie9YgB6FIvtXK",
+        "location": "Boston, MA",
+        "salary": "$68000 - $132000",
+        "jobType": "Contract",
+        "description": "We are seeking a Backend Developer to join our team and drive impactful projects.",
+        "requirements": [
+          "Background in industry-specific tools",
+          "Familiar with Agile methodology",
+          "3+ years of relevant experience",
+          "Proficient in JavaScript and React"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "comp002",
+    "name": "SanDenBridge Inc.",
+    "logo": "https://p0q8sxiv1v.ufs.sh/f/d5sl76Fmercxvl4j6Du3e5HpJK14OzQjyCqagc6fPxDdhVI9",
+    "location": "Austin, TX",
+    "website": "https://healthbridgeinc..com",
+    "industry": "Healthcare",
+    "jobs": [
+      {
+        "id": "job0021",
+        "title": "Frontend Developer",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxyIdpCB2XzBGNK9MmEWDU7c8jxF4glRtCZfq5",
+        "location": "Seattle, WA",
+        "salary": "$90000 - $124000",
+        "jobType": "Contract",
+        "description": "We are seeking a Frontend Developer to join our team and drive impactful projects.",
+        "requirements": [
+          "Team player and self-motivated",
+          "3+ years of relevant experience",
+          "Proficient in JavaScript and React",
+          "Bachelor\u2019s degree in related field"
+        ]
+      },
+      {
+        "id": "job0022",
+        "title": "Project Manager",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxoXBTaLsIf8VHJlDP0RnubOZxt7giG3QwcFs4",
+        "location": "New York, NY",
+        "salary": "$60000 - $125000",
+        "jobType": "Part-time",
+        "description": "We are seeking a Project Manager to join our team and drive impactful projects.",
+        "requirements": [
+          "Knowledge of cloud platforms like AWS or Azure",
+          "Team player and self-motivated",
+          "Bachelor\u2019s degree in related field",
+          "Background in industry-specific tools"
+        ]
+      },
+      {
+        "id": "job0023",
+        "title": "Project Manager",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76Fmercxl9xDNjwPajNuVZARKgypbveIozlY2wnirDWC",
+        "location": "San Francisco, CA",
+        "salary": "$88000 - $134000",
+        "jobType": "Full-time",
+        "description": "We are seeking a Project Manager to join our team and drive impactful projects.",
+        "requirements": [
+          "Strong communication skills",
+          "3+ years of relevant experience",
+          "Bachelor\u2019s degree in related field",
+          "Proficient in JavaScript and React"
+        ]
+      },
+      {
+        "id": "job0024",
+        "title": "Data Scientist",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxcuQZT9gUAW9LxJDMlieG4pjSztb5aFKQ8ONk",
+        "location": "Boston, MA",
+        "salary": "$77000 - $131000",
+        "jobType": "Part-time",
+        "description": "We are seeking a Data Scientist to join our team and drive impactful projects.",
+        "requirements": [
+          "Proficient in JavaScript and React",
+          "3+ years of relevant experience",
+          "Background in industry-specific tools",
+          "Knowledge of cloud platforms like AWS or Azure"
+        ]
+      },
+      {
+        "id": "job0025",
+        "title": "Data Scientist",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxwPinBkf8E2rAWVSiN04qYwHFlUIgsdbf5TKm",
+        "location": "Austin, TX",
+        "salary": "$66000 - $146000",
+        "jobType": "Remote",
+        "description": "We are seeking a Data Scientist to join our team and drive impactful projects.",
+        "requirements": [
+          "Background in industry-specific tools",
+          "Familiar with Agile methodology",
+          "Strong communication skills",
+          "Knowledge of cloud platforms like AWS or Azure"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "comp003",
+    "name": "Axion Energy",
+    "logo": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxQrZEEjkkHytUn3q2lDIhx8YK4EgRAc91zPoC",
+    "location": "San Francisco, CA",
+    "website": "https://greensparkenergy.com",
+    "industry": "Energy",
+    "jobs": [
+      {
+        "id": "job0031",
+        "title": "Data Scientist",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxVXziMYnwjH9tnoKMBsEVCvL8f0dlzW5uGpPA",
+        "location": "Chicago, IL",
+        "salary": "$89000 - $149000",
+        "jobType": "Remote",
+        "description": "We are seeking a Data Scientist to join our team and drive impactful projects.",
+        "requirements": [
+          "Background in industry-specific tools",
+          "Knowledge of cloud platforms like AWS or Azure",
+          "Experience with SQL and Python",
+          "Familiar with Agile methodology"
+        ]
+      },
+      {
+        "id": "job0032",
+        "title": "Project Manager",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxVuiHoLnwjH9tnoKMBsEVCvL8f0dlzW5uGpPA",
+        "location": "San Francisco, CA",
+        "salary": "$76000 - $120000",
+        "jobType": "Full-time",
+        "description": "We are seeking a Project Manager to join our team and drive impactful projects.",
+        "requirements": [
+          "Strong communication skills",
+          "Background in industry-specific tools",
+          "Knowledge of cloud platforms like AWS or Azure",
+          "Familiar with Agile methodology"
+        ]
+      },
+      {
+        "id": "job0033",
+        "title": "Product Manager",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxaFzs4YRLcIH72nmZQth1orU6Dxe4MkSuwKB8",
+        "location": "Boston, MA",
+        "salary": "$70000 - $143000",
+        "jobType": "Remote",
+        "description": "We are seeking a Product Manager to join our team and drive impactful projects.",
+        "requirements": [
+          "Background in industry-specific tools",
+          "Experience with SQL and Python",
+          "3+ years of relevant experience",
+          "Knowledge of cloud platforms like AWS or Azure"
+        ]
+      },
+      {
+        "id": "job0034",
+        "title": "UX/UI Designer",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxJtNKG7EtMH1y2Q3PiLKEFfweN4WuOd0S6ors",
+        "location": "Remote",
+        "salary": "$87000 - $132000",
+        "jobType": "Contract",
+        "description": "We are seeking a UX/UI Designer to join our team and drive impactful projects.",
+        "requirements": [
+          "Team player and self-motivated",
+          "3+ years of relevant experience",
+          "Background in industry-specific tools",
+          "Strong communication skills"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "comp004",
+    "name": "FLIRCore Systems",
+    "logo": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxI8rgrXiOZQmCMJd6LY2X0roz5egPscwxiT74",
+    "location": "San Francisco, CA",
+    "website": "https://fincoresystems.com",
+    "industry": "Finance",
+    "jobs": [
+      {
+        "id": "job0041",
+        "title": "Backend Developer",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxSqshxPl1v5rn81ElukO9bLR4y2MFJNsB7hCS",
+        "location": "Seattle, WA",
+        "salary": "$89000 - $115000",
+        "jobType": "Part-time",
+        "description": "We are seeking a Backend Developer to join our team and drive impactful projects.",
+        "requirements": [
+          "Familiar with Agile methodology",
+          "Team player and self-motivated",
+          "Strong communication skills",
+          "Proficient in JavaScript and React"
+        ]
+      },
+      {
+        "id": "job0042",
+        "title": "Project Manager",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxEKVSEidSitlCjgrVPxWHRXhN08k49znEpQou",
+        "location": "Remote",
+        "salary": "$84000 - $140000",
+        "jobType": "Remote",
+        "description": "We are seeking a Project Manager to join our team and drive impactful projects.",
+        "requirements": [
+          "Background in industry-specific tools",
+          "3+ years of relevant experience",
+          "Strong communication skills",
+          "Proficient in JavaScript and React"
+        ]
+      },
+      {
+        "id": "job0043",
+        "title": "Project Manager",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxsXNnXVOyQsdUcKbaDIOA7t3S6zjvg0f5qrhe",
+        "location": "Austin, TX",
+        "salary": "$62000 - $128000",
+        "jobType": "Part-time",
+        "description": "We are seeking a Project Manager to join our team and drive impactful projects.",
+        "requirements": [
+          "Knowledge of cloud platforms like AWS or Azure",
+          "Experience with SQL and Python",
+          "3+ years of relevant experience",
+          "Background in industry-specific tools"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "comp005",
+    "name": "EduVerse Learning",
+    "logo": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxgH20dLvVsBlyOrZWh4VeUwtHA6Qm9TiYzkR0",
+    "location": "New York, NY",
+    "website": "https://eduverselearning.com",
+    "industry": "Education",
+    "jobs": [
+      {
+        "id": "job0051",
+        "title": "UX/UI Designer",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76Fmercx16MQioUHoKad8Lh4uVQTm26ktPFzMcpnEeR0",
+        "location": "Seattle, WA",
+        "salary": "$90000 - $113000",
+        "jobType": "Contract",
+        "description": "We are seeking a UX/UI Designer to join our team and drive impactful projects.",
+        "requirements": [
+          "Bachelor\u2019s degree in related field",
+          "3+ years of relevant experience",
+          "Strong communication skills",
+          "Background in industry-specific tools"
+        ]
+      },
+      {
+        "id": "job0052",
+        "title": "Data Scientist",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxJvviLtEtMH1y2Q3PiLKEFfweN4WuOd0S6ors",
+        "location": "Chicago, IL",
+        "salary": "$100000 - $106000",
+        "jobType": "Contract",
+        "description": "We are seeking a Data Scientist to join our team and drive impactful projects.",
+        "requirements": [
+          "Background in industry-specific tools",
+          "Experience with SQL and Python",
+          "Strong communication skills",
+          "Familiar with Agile methodology"
+        ]
+      },
+      {
+        "id": "job0053",
+        "title": "UX/UI Designer",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxHN0lA7IvQnRV9UmaZqjdS8t5NYopMkuicghb",
+        "location": "New York, NY",
+        "salary": "$60000 - $134000",
+        "jobType": "Remote",
+        "description": "We are seeking a UX/UI Designer to join our team and drive impactful projects.",
+        "requirements": [
+          "Knowledge of cloud platforms like AWS or Azure",
+          "3+ years of relevant experience",
+          "Team player and self-motivated",
+          "Experience with SQL and Python"
+        ]
+      },
+      {
+        "id": "job0054",
+        "title": "DevOps Engineer",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxXKqyDx3As7pd8wyjWRBD5XZfMhO6U4i9xPte",
+        "location": "New York, NY",
+        "salary": "$97000 - $106000",
+        "jobType": "Part-time",
+        "description": "We are seeking a DevOps Engineer to join our team and drive impactful projects.",
+        "requirements": [
+          "Knowledge of cloud platforms like AWS or Azure",
+          "Proficient in JavaScript and React",
+          "Strong communication skills",
+          "Background in industry-specific tools"
+        ]
+      },
+      {
+        "id": "job0055",
+        "title": "Marketing Specialist",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxEvSWhldSitlCjgrVPxWHRXhN08k49znEpQou",
+        "location": "San Francisco, CA",
+        "salary": "$97000 - $125000",
+        "jobType": "Remote",
+        "description": "We are seeking a Marketing Specialist to join our team and drive impactful projects.",
+        "requirements": [
+          "Knowledge of cloud platforms like AWS or Azure",
+          "Bachelor\u2019s degree in related field",
+          "Proficient in JavaScript and React",
+          "Background in industry-specific tools"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "comp006",
+    "name": "LowerPro Technologies",
+    "logo": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxkPRysiKWL4Z7IEhNjS0PV6piUOgdwHfc5CAn",
+    "location": "New York, NY",
+    "website": "https://cloudaxistechnologies.com",
+    "industry": "Biotech",
+    "jobs": [
+      {
+        "id": "job0061",
+        "title": "Marketing Specialist",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxCJapCoy6SjWKaFLM4TEOJ2HBqhNuolnUfZcv",
+        "location": "Seattle, WA",
+        "salary": "$72000 - $112000",
+        "jobType": "Part-time",
+        "description": "We are seeking a Marketing Specialist to join our team and drive impactful projects.",
+        "requirements": [
+          "Bachelor\u2019s degree in related field",
+          "Proficient in JavaScript and React",
+          "Team player and self-motivated",
+          "Strong communication skills"
+        ]
+      },
+      {
+        "id": "job0062",
+        "title": "QA Engineer",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxFW5Nqr1QLPwIx2Z3CkiJY04jNTtVWoKOQ9Gc",
+        "location": "Austin, TX",
+        "salary": "$91000 - $142000",
+        "jobType": "Full-time",
+        "description": "We are seeking a QA Engineer to join our team and drive impactful projects.",
+        "requirements": [
+          "3+ years of relevant experience",
+          "Familiar with Agile methodology",
+          "Strong communication skills",
+          "Proficient in JavaScript and React"
+        ]
+      },
+      {
+        "id": "job0063",
+        "title": "DevOps Engineer",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxAPKSjVJl0xfr47kzLtvZacouYdUCV3Nb8FGA",
+        "location": "Boston, MA",
+        "salary": "$86000 - $122000",
+        "jobType": "Part-time",
+        "description": "We are seeking a DevOps Engineer to join our team and drive impactful projects.",
+        "requirements": [
+          "Experience with SQL and Python",
+          "Background in industry-specific tools",
+          "Team player and self-motivated",
+          "Knowledge of cloud platforms like AWS or Azure"
+        ]
+      },
+      {
+        "id": "job0064",
+        "title": "Marketing Specialist",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76Fmercxi3ygO1hzVoOfG3YmqRsPWZgQjp6A9exJiaF5",
+        "location": "Boston, MA",
+        "salary": "$91000 - $144000",
+        "jobType": "Remote",
+        "description": "We are seeking a Marketing Specialist to join our team and drive impactful projects.",
+        "requirements": [
+          "Experience with SQL and Python",
+          "Strong communication skills",
+          "Team player and self-motivated",
+          "Familiar with Agile methodology"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "comp007",
+    "name": "MediCore Labs",
+    "logo": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxSRWvPf1v5rn81ElukO9bLR4y2MFJNsB7hCSm",
+    "location": "New York, NY",
+    "website": "https://medicorelabs.com",
+    "industry": "Agriculture",
+    "jobs": [
+      {
+        "id": "job0071",
+        "title": "QA Engineer",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76Fmercx0wu9pyC7YASZIi5kNuovOULc9H6r8GajKFEM",
+        "location": "Chicago, IL",
+        "salary": "$89000 - $110000",
+        "jobType": "Full-time",
+        "description": "We are seeking a QA Engineer to join our team and drive impactful projects.",
+        "requirements": [
+          "Bachelor\u2019s degree in related field",
+          "3+ years of relevant experience",
+          "Knowledge of cloud platforms like AWS or Azure",
+          "Strong communication skills"
+        ]
+      },
+      {
+        "id": "job0072",
+        "title": "UX/UI Designer",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxtOLL7r8VbzR7uHQ2cdh1oksie9YgB6FIvtXK",
+        "location": "Remote",
+        "salary": "$67000 - $105000",
+        "jobType": "Contract",
+        "description": "We are seeking a UX/UI Designer to join our team and drive impactful projects.",
+        "requirements": [
+          "Knowledge of cloud platforms like AWS or Azure",
+          "Team player and self-motivated",
+          "Bachelor\u2019s degree in related field",
+          "3+ years of relevant experience"
+        ]
+      },
+      {
+        "id": "job0073",
+        "title": "UX/UI Designer",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76Fmercx1xT8FmUHoKad8Lh4uVQTm26ktPFzMcpnEeR0",
+        "location": "Chicago, IL",
+        "salary": "$88000 - $120000",
+        "jobType": "Full-time",
+        "description": "We are seeking a UX/UI Designer to join our team and drive impactful projects.",
+        "requirements": [
+          "Knowledge of cloud platforms like AWS or Azure",
+          "Strong communication skills",
+          "Familiar with Agile methodology",
+          "Background in industry-specific tools"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "comp008",
+    "name": "AgroFuture Farms",
+    "logo": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxELzfsxdSitlCjgrVPxWHRXhN08k49znEpQou",
+    "location": "Chicago, IL",
+    "website": "https://agrofuturefarms.com",
+    "industry": "Logistics",
+    "jobs": [
+      {
+        "id": "job0081",
+        "title": "Marketing Specialist",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxKapeWMr6xCDiFnlaBpZLUMwct8JeIYQOs2XN",
+        "location": "Seattle, WA",
+        "salary": "$61000 - $108000",
+        "jobType": "Contract",
+        "description": "We are seeking a Marketing Specialist to join our team and drive impactful projects.",
+        "requirements": [
+          "3+ years of relevant experience",
+          "Team player and self-motivated",
+          "Bachelor\u2019s degree in related field",
+          "Knowledge of cloud platforms like AWS or Azure"
+        ]
+      },
+      {
+        "id": "job0082",
+        "title": "Backend Developer",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76Fmercx5YBMwMTa0h1S9JTUFEnfy3ourN6sCtkxvj2p",
+        "location": "Seattle, WA",
+        "salary": "$87000 - $124000",
+        "jobType": "Part-time",
+        "description": "We are seeking a Backend Developer to join our team and drive impactful projects.",
+        "requirements": [
+          "Proficient in JavaScript and React",
+          "Experience with SQL and Python",
+          "Background in industry-specific tools",
+          "Strong communication skills"
+        ]
+      },
+      {
+        "id": "job0083",
+        "title": "Data Scientist",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxDVyuBhKc6dabVHUpimShoxJk8WZ4QEOF7Tru",
+        "location": "San Francisco, CA",
+        "salary": "$80000 - $132000",
+        "jobType": "Full-time",
+        "description": "We are seeking a Data Scientist to join our team and drive impactful projects.",
+        "requirements": [
+          "Strong communication skills",
+          "Familiar with Agile methodology",
+          "Experience with SQL and Python",
+          "Background in industry-specific tools"
+        ]
+      },
+      {
+        "id": "job0084",
+        "title": "DevOps Engineer",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxdemUyZFmercxLFsIiD0Z2M41hl6QP8yfCnuA",
+        "location": "Remote",
+        "salary": "$67000 - $110000",
+        "jobType": "Contract",
+        "description": "We are seeking a DevOps Engineer to join our team and drive impactful projects.",
+        "requirements": [
+          "Proficient in JavaScript and React",
+          "Knowledge of cloud platforms like AWS or Azure",
+          "3+ years of relevant experience",
+          "Familiar with Agile methodology"
+        ]
+      },
+      {
+        "id": "job0085",
+        "title": "Customer Support Specialist",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76Fmercx7gC5S4qD7oHlNAYaGv2iCS3Xd5enVWOKqPzt",
+        "location": "Seattle, WA",
+        "salary": "$98000 - $144000",
+        "jobType": "Contract",
+        "description": "We are seeking a Customer Support Specialist to join our team and drive impactful projects.",
+        "requirements": [
+          "Knowledge of cloud platforms like AWS or Azure",
+          "Background in industry-specific tools",
+          "Strong communication skills",
+          "Proficient in JavaScript and React"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "comp009",
+    "name": "Urban Engineers",
+    "logo": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxE0JbQtdSitlCjgrVPxWHRXhN08k49znEpQou",
+    "location": "Seattle, WA",
+    "website": "https://urbanlogix.com",
+    "industry": "Artificial Intelligence",
+    "jobs": [
+      {
+        "id": "job0091",
+        "title": "Marketing Specialist",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76Fmercx8pVZEyVTh6YcnSXAVjLT4U7Js1ilrwmIxBzf",
+        "location": "New York, NY",
+        "salary": "$85000 - $137000",
+        "jobType": "Remote",
+        "description": "We are seeking a Marketing Specialist to join our team and drive impactful projects.",
+        "requirements": [
+          "Familiar with Agile methodology",
+          "Team player and self-motivated",
+          "Strong communication skills",
+          "Knowledge of cloud platforms like AWS or Azure"
+        ]
+      },
+      {
+        "id": "job0092",
+        "title": "Backend Developer",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxQ82TePkkHytUn3q2lDIhx8YK4EgRAc91zPoC",
+        "location": "Chicago, IL",
+        "salary": "$85000 - $131000",
+        "jobType": "Contract",
+        "description": "We are seeking a Backend Developer to join our team and drive impactful projects.",
+        "requirements": [
+          "Bachelor\u2019s degree in related field",
+          "3+ years of relevant experience",
+          "Experience with SQL and Python",
+          "Strong communication skills"
+        ]
+      },
+      {
+        "id": "job0093",
+        "title": "QA Engineer",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76Fmercx0REsTeC7YASZIi5kNuovOULc9H6r8GajKFEM",
+        "location": "Remote",
+        "salary": "$95000 - $146000",
+        "jobType": "Full-time",
+        "description": "We are seeking a QA Engineer to join our team and drive impactful projects.",
+        "requirements": [
+          "Familiar with Agile methodology",
+          "Knowledge of cloud platforms like AWS or Azure",
+          "Strong communication skills",
+          "Background in industry-specific tools"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "comp010",
+    "name": "ICOMnet AI",
+    "logo": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxSg5lws1v5rn81ElukO9bLR4y2MFJNsB7hCSm",
+    "location": "Austin, TX",
+    "website": "https://neuronetai.com",
+    "industry": "Retail",
+    "jobs": [
+      {
+        "id": "job0101",
+        "title": "DevOps Engineer",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76Fmercx8GcKdVTh6YcnSXAVjLT4U7Js1ilrwmIxBzfK",
+        "location": "Seattle, WA",
+        "salary": "$84000 - $106000",
+        "jobType": "Full-time",
+        "description": "We are seeking a DevOps Engineer to join our team and drive impactful projects.",
+        "requirements": [
+          "Knowledge of cloud platforms like AWS or Azure",
+          "Strong communication skills",
+          "Experience with SQL and Python",
+          "Proficient in JavaScript and React"
+        ]
+      },
+      {
+        "id": "job0102",
+        "title": "Data Scientist",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76Fmercxuid5kXoiCrFkZLQ0MvBIOY4qP531n9pGAcmW",
+        "location": "New York, NY",
+        "salary": "$66000 - $108000",
+        "jobType": "Part-time",
+        "description": "We are seeking a Data Scientist to join our team and drive impactful projects.",
+        "requirements": [
+          "Knowledge of cloud platforms like AWS or Azure",
+          "Background in industry-specific tools",
+          "3+ years of relevant experience",
+          "Experience with SQL and Python"
+        ]
+      },
+      {
+        "id": "job0103",
+        "title": "Customer Support Specialist",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxahU7BZRLcIH72nmZQth1orU6Dxe4MkSuwKB8",
+        "location": "Boston, MA",
+        "salary": "$61000 - $112000",
+        "jobType": "Remote",
+        "description": "We are seeking a Customer Support Specialist to join our team and drive impactful projects.",
+        "requirements": [
+          "Strong communication skills",
+          "Knowledge of cloud platforms like AWS or Azure",
+          "3+ years of relevant experience",
+          "Experience with SQL and Python"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "comp011",
+    "name": "BlueOcean Retail",
+    "logo": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxVkoqWxnwjH9tnoKMBsEVCvL8f0dlzW5uGpPA",
+    "location": "Boston, MA",
+    "website": "https://blueoceanretail.com",
+    "industry": "Information Technology",
+    "jobs": [
+      {
+        "id": "job0111",
+        "title": "Product Manager",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76Fmercx01MPLFC7YASZIi5kNuovOULc9H6r8GajKFEM",
+        "location": "Seattle, WA",
+        "salary": "$100000 - $111000",
+        "jobType": "Contract",
+        "description": "We are seeking a Product Manager to join our team and drive impactful projects.",
+        "requirements": [
+          "Knowledge of cloud platforms like AWS or Azure",
+          "Proficient in JavaScript and React",
+          "Strong communication skills",
+          "Bachelor\u2019s degree in related field"
+        ]
+      },
+      {
+        "id": "job0112",
+        "title": "UX/UI Designer",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxOrIS1TAFsTA6aKMbOSjZYwIB2mqxCH4tRgDL",
+        "location": "Remote",
+        "salary": "$60000 - $140000",
+        "jobType": "Full-time",
+        "description": "We are seeking a UX/UI Designer to join our team and drive impactful projects.",
+        "requirements": [
+          "Knowledge of cloud platforms like AWS or Azure",
+          "3+ years of relevant experience",
+          "Familiar with Agile methodology",
+          "Background in industry-specific tools"
+        ]
+      },
+      {
+        "id": "job0113",
+        "title": "Customer Support Specialist",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxHedj2GIvQnRV9UmaZqjdS8t5NYopMkuicghb",
+        "location": "Boston, MA",
+        "salary": "$63000 - $116000",
+        "jobType": "Part-time",
+        "description": "We are seeking a Customer Support Specialist to join our team and drive impactful projects.",
+        "requirements": [
+          "Strong communication skills",
+          "Experience with SQL and Python",
+          "Bachelor\u2019s degree in related field",
+          "3+ years of relevant experience"
+        ]
+      },
+      {
+        "id": "job0114",
+        "title": "Frontend Developer",
+        "bannerImage": "https://p0q8sxiv1v.ufs.sh/f/d5sl76FmercxY8MJtJ7LNF0ym7XxUE1cDqIafLp9382Whdu4",
+        "location": "San Francisco, CA",
+        "salary": "$99000 - $138000",
+        "jobType": "Full-time",
+        "description": "We are seeking a Frontend Developer to join our team and drive impactful projects.",
+        "requirements": [
+          "Proficient in JavaScript and React",
+          "Strong communication skills",
+          "Knowledge of cloud platforms like AWS or Azure",
+          "Team player and self-motivated"
+        ]
+      }
+    ]
+  }
+]
