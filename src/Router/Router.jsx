@@ -2,6 +2,8 @@ import React from "react";
 import { createBrowserRouter } from "react-router";
 import RootLayout from "../Layouts/RootLayout";
 import HomePage from "../Pages/HomePage";
+import CompanyDetails from "../Layouts/CompanyDetails";
+import LoaderDiv from "../Components/LoaderDiv";
 
 const Router = createBrowserRouter([
   {
@@ -13,6 +15,12 @@ const Router = createBrowserRouter([
         element: <HomePage></HomePage>,
       },
     ],
+  },
+  {
+    path: "/company/:id",
+    element: <CompanyDetails></CompanyDetails>,
+    loader: () => fetch("/job-company.json"),
+    hydrateFallbackElement: <LoaderDiv></LoaderDiv>,
   },
   {
     path: "/logIn",
