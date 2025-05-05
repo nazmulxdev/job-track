@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="grid grid-cols-2 justify-center bg-[#f0ede9] rounded-2xl bg-">
         <div className="p-16 my-auto">
           <h1 className="font-bold text-2xl mb-4">
-            <span className="text-3xl">Job Track!!</span> <br />
+            <span className="text-3xl text-primary">Job Track!!</span> <br />
             <br />
             Find Your Next{" "}
             <span className="text-primary">Great Opportunity</span>
