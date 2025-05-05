@@ -7,7 +7,7 @@ const FaqSection = () => {
       <h1 className="font-bold text-4xl mt-18 text-center">
         <span className="text-primary">FAQ:</span> Need Help? We’ve Got Answers
       </h1>
-      <div className="grid grid-cols-2 items-center justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center mt-2">
         <div>
           <img src={faqImage} alt="" />
         </div>
