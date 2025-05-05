@@ -2,7 +2,7 @@ import React from "react";
 
 const Avatar = ({ url }) => {
   const photoUrl = url;
-  console.log(photoUrl);
+  // console.log(photoUrl);
   return (
     <div className="avatar avatar-online">
       <div className="w-10 sm:w-12 md:w-16 lg:w-20 xl:w-24 rounded-full">

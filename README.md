@@ -17,6 +17,10 @@ The key features of this website is user friendly environment. This website is c
 - React icons
 - Tailwind css
 - Daisy UI
+- React-spinners
+- motion
+- motion-V
+- react-dom
 
 Currently, two official plugins are available:
 

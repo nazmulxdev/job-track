@@ -1,11 +1,13 @@
 import React from "react";
-import NavBar from "../Components/NavBar";
+
 import Hero from "../Components/Hero";
+import Companies from "../Components/Companies";
 
 const HomePage = () => {
   return (
     <div>
       <Hero></Hero>
+      <Companies></Companies>
     </div>
   );
 };
