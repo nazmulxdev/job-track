@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import errorImage from "../assets/404-error-purple.png";
 import NavBar from "../Components/NavBar";
 import { Link } from "react-router";
 
 const ErrorPage = () => {
+  useEffect(() => {
+    document.title = "JobTrack | 404-ErrorPage";
+  }, []);
   return (
     <div>
       <NavBar></NavBar>

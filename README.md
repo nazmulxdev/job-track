@@ -4,7 +4,10 @@
 
 This is the simple single page website. The main purpose of this project is to gather all job opportunities which are giving by several company. Visitors can get all the job opportunities and job details in this site.
 
-# Live URL: link-1: https://jobtrack-7133a.web.app/ or link-2: https://jobtrack-7133a.firebaseapp.com/
+# Live URL:
+
+- link-1: https://jobtrack-7133a.web.app/
+- link-2: https://jobtrack-7133a.firebaseapp.com/
 
 # Key Features:
 
