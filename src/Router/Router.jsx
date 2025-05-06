@@ -7,6 +7,7 @@ import LoaderDiv from "../Components/LoaderDiv";
 import LogIn from "../Pages/LogIn";
 import Register from "../Pages/Register";
 import ForgetPassword from "../Pages/ForgetPassword";
+import PrivateRoute from "../Private/PrivateRoute";
 
 const Router = createBrowserRouter([
   {
@@ -20,7 +21,11 @@ const Router = createBrowserRouter([
 
       {
         path: "/company/:id",
-        element: <CompanyDetails></CompanyDetails>,
+        element: (
+          <PrivateRoute>
+            <CompanyDetails></CompanyDetails>
+          </PrivateRoute>
+        ),
         loader: () => fetch("/job-company.json"),
         hydrateFallbackElement: <LoaderDiv></LoaderDiv>,
       },

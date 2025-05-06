@@ -4,10 +4,27 @@ import NavBar from "../Components/NavBar";
 import AuthContext from "../Context/AuthContext";
 
 const LogIn = () => {
-  const { signInGoogle, setCurrentUser } = useContext(AuthContext);
+  const { signInGoogle, setCurrentUser, signInEmail } = useContext(AuthContext);
   const [errorText, setErrorText] = useState(null);
+  const [currentEmail, setCurrentEmail] = useState("");
   const location = useLocation();
   const navigate = useNavigate();
+  console.log(location);
+  const handleLogIn = (event) => {
+    event.preventDefault();
+    const email = event.target.email.value;
+    const password = event.target.password.value;
+    signInEmail(email, password)
+      .then((result) => {
+        const user = result.user;
+        setCurrentUser(user);
+        navigate(`${location.state ? location.state : "/"}`);
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        setErrorText(errorMessage);
+      });
+  };
 
   const handleGoogleLogIn = () => {
     signInGoogle()
@@ -36,7 +53,7 @@ const LogIn = () => {
           <hr className="w-full border-t-2 border-violet-500 my-4" />
           <hr className="w-full border-t-2 border-violet-500 my-4" />
         </div>
-        <form className="space-y-8">
+        <form onSubmit={handleLogIn} className="space-y-8">
           <div className="space-y-4">
             <div className="space-y-2">
               <label htmlFor="email" className="block text-sm font-medium">
@@ -48,6 +65,7 @@ const LogIn = () => {
                 id="email"
                 placeholder="leroy@jenkins.com"
                 className="w-full px-3 py-2 border border-violet-500 text-violet-600 rounded-md "
+                onChange={(event) => setCurrentEmail(event.target.value)}
               />
             </div>
             <div className="space-y-2">
@@ -58,6 +76,7 @@ const LogIn = () => {
                 <Link
                   rel="noopener noreferrer"
                   to="/resetPassword"
+                  state={{ currentEmail }}
                   className="text-xs hover:underline font-medium text-violet-500"
                 >
                   Forgot password?
@@ -108,6 +127,7 @@ const LogIn = () => {
             Don't have account?
             <Link
               to="/register"
+              state={location.state}
               rel="noopener noreferrer"
               className="focus:underline hover:underline text-primary underline"
             >

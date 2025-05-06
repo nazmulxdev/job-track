@@ -2,12 +2,44 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 import NavBar from "../Components/NavBar";
 import AuthContext from "../Context/AuthContext";
+import { auth } from "../FireBase/fireBase.config";
 
 const Register = () => {
-  const { signInGoogle, setCurrentUser } = useContext(AuthContext);
+  const { signInGoogle, setCurrentUser, createUser, updateUser } =
+    useContext(AuthContext);
   const [errorText, setErrorText] = useState(null);
   const location = useLocation();
+  console.log(location);
   const navigate = useNavigate();
+  const handleRegister = (event) => {
+    event.preventDefault();
+    const name = event.target.name.value;
+    const photoURL = event.target.photoURL.value;
+    const email = event.target.email.value;
+    const password = event.target.password.value;
+
+    createUser(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+
+        const profile = {
+          displayName: name,
+          photoURL: photoURL,
+        };
+
+        updateUser(profile).then(() => {
+          setCurrentUser(auth.currentUser);
+          navigate(`${location.state ? location.state : "/"}`);
+        });
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        setErrorText(errorMessage);
+      });
+
+    console.log(name, photoURL, email, password);
+  };
 
   const handleGoogleLogIn = () => {
     signInGoogle()
@@ -37,7 +69,7 @@ const Register = () => {
           <hr className="w-full border-t-2 border-violet-500 my-4" />
         </div>
 
-        <form className="space-y-8">
+        <form onSubmit={handleRegister} className="space-y-8">
           <div className="space-y-4">
             <div className="space-y-2">
               <label htmlFor="email" className="block text-sm font-medium">
@@ -55,8 +87,8 @@ const Register = () => {
               </label>
               <input
                 type="text"
-                name="name"
-                id="name"
+                name="photoURL"
+                id="photoURL"
                 placeholder="Your Photo URL"
                 className="w-full px-3 py-2 border border-violet-500 text-violet-600 rounded-md mb-4"
               />
@@ -80,8 +112,10 @@ const Register = () => {
               <input
                 type="password"
                 required
+                name="password"
+                id="password"
                 placeholder="*******"
-                minlength="8"
+                minLength={6}
                 pattern="(?=.*[a-z])(?=.*[A-Z]).{6,}"
                 title="Must be at least 6 characters, lowercase letter, uppercase letter"
                 className="w-full px-3 py-2 border border-violet-500 text-violet-600 rounded-md "

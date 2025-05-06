@@ -2,11 +2,37 @@ import React, { useContext } from "react";
 import navImage from "../assets/logo-violet.png";
 import Avatar from "./Avatar";
 import AuthContext from "../Context/AuthContext";
-import { Link, NavLink } from "react-router";
+import { Link, NavLink, useLocation, useNavigate } from "react-router";
 
 const NavBar = () => {
-  const { name } = useContext(AuthContext);
-  console.log(name);
+  const { currentUser, logOut } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+  console.log(location);
+
+  const handleLogOut = () => {
+    logOut().then(() => {
+      navigate(`${location.state ? location.state : "/"}`);
+    });
+  };
+  const logInButtons = (
+    <>
+      <Link
+        to="/logIn"
+        state={location.state}
+        className="btn btn-primary border-0"
+      >
+        Log in
+      </Link>
+      <Link
+        to="/register"
+        state={location.state}
+        className="btn btn-primary border-0"
+      >
+        Register
+      </Link>
+    </>
+  );
   return (
     <div className="navbar shadow-accent xl:px-40 lg:px-30 md:px-20 sm:px-10 px-5   shadow-xl mx-auto py-4 justify-between">
       <div className="navbar-start">
@@ -61,13 +87,17 @@ const NavBar = () => {
         <NavLink to="/" className="text-xl">
           Home
         </NavLink>
-        <Avatar></Avatar>
-        <Link to="/logIn" className="btn btn-primary border-0">
-          Log in
-        </Link>
-        <Link to="/register" className="btn btn-primary border-0">
-          Register
-        </Link>
+
+        {currentUser ? (
+          <>
+            <Avatar currentUser={currentUser}></Avatar>
+            <button onClick={handleLogOut} className="btn btn-primary border-0">
+              Log out
+            </button>
+          </>
+        ) : (
+          logInButtons
+        )}
       </div>
     </div>
   );

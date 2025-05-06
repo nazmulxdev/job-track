@@ -18,7 +18,6 @@ const CompanyDetails = () => {
     setSingleCompany(company);
     document.title = `JobTrack | ${company.name}`;
   }, [id, companyData]);
-  console.log(singleCompany.jobs);
   return (
     <div>
       <Suspense fallback={<LoaderDiv></LoaderDiv>}>

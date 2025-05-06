@@ -1,11 +1,30 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router";
+import React, { useContext, useEffect, useState } from "react";
+import { Link, useLocation } from "react-router";
 import NavBar from "../Components/NavBar";
+import AuthContext from "../Context/AuthContext";
 
 const ForgetPassword = () => {
+  const { resetPassword } = useContext(AuthContext);
+  const location = useLocation();
+  const [previousEmail, setPreviousEmail] = useState("");
+  useEffect(() => {
+    if (location.state.currentEmail) {
+      setPreviousEmail(location.state.currentEmail);
+    }
+  }, [location]);
+
+  console.log(previousEmail);
   useEffect(() => {
     document.title = "JobTrack | ResetPassword";
   }, []);
+
+  const handleResetPassword = (event) => {
+    event.preventDefault();
+    const email = event.target.email.value;
+    resetPassword(email).then(() => {
+      window.location.href = "https://mail.google.com";
+    });
+  };
   return (
     <div>
       <NavBar></NavBar>
@@ -17,7 +36,7 @@ const ForgetPassword = () => {
           <hr className="w-full border-t-2 border-violet-500 my-4" />
           <hr className="w-full border-t-2 border-violet-500 my-4" />
         </div>
-        <form className="space-y-8">
+        <form onSubmit={handleResetPassword} className="space-y-8">
           <div className="space-y-4">
             <div className="space-y-2">
               <label htmlFor="email" className="block text-sm font-medium">
@@ -26,6 +45,8 @@ const ForgetPassword = () => {
               <input
                 type="email"
                 name="email"
+                value={previousEmail}
+                onChange={(e) => setPreviousEmail(e.target.value)}
                 id="email"
                 placeholder="leroy@jenkins.com"
                 className="w-full px-3 py-2 border border-violet-500 text-violet-600 rounded-md "
