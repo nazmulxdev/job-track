@@ -4,7 +4,7 @@
 
 This is the simple single page website. The main purpose of this project is to gather all job opportunities which are giving by several company. Visitors can get all the job opportunities and job details in this site.
 
-# Live URL:
+# Live URL: link-1: https://jobtrack-7133a.web.app/ or link-2: https://jobtrack-7133a.firebaseapp.com/
 
 # Key Features:
 
@@ -18,9 +18,12 @@ The key features of this website is user friendly environment. This website is c
 - Tailwind css
 - Daisy UI
 - React-spinners
-- motion
-- motion-V
-- react-dom
+- Motion
+- Motion-V
+- React-dom
+- Gsap
+- sweetalert2
+- react-helmet
 
 Currently, two official plugins are available:
 
