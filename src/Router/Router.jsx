@@ -11,6 +11,7 @@ import PrivateRoute from "../Private/PrivateRoute";
 import UserProfile from "../Pages/UserProfile";
 import UpdateProfile from "../Pages/UpdateProfile";
 import ContactUs from "../Pages/ContactUs";
+import ErrorPage from "../Pages/ErrorPage";
 
 const Router = createBrowserRouter([
   {
@@ -70,6 +71,10 @@ const Router = createBrowserRouter([
   {
     path: "/resetPassword",
     element: <ForgetPassword></ForgetPassword>,
+  },
+  {
+    path: "/*",
+    element: <ErrorPage></ErrorPage>,
   },
 ]);
 
