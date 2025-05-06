@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaMapMarkerAlt, FaBriefcase, FaDollarSign } from "react-icons/fa";
 import { Link } from "react-router";
+import JobModal from "./JobModal";
 
-const JobsUnderCompany = ({ job }) => {
+const JobsUnderCompany = ({ job, companyWebsite  }) => {
+  const [isModalOpen, setModalOpen] = useState(false);
+  const handleOpenModal = () => setModalOpen(true);
+  const handleCloseModal = () => setModalOpen(false);
   return (
     <div className=" xl:px-40 lg:px-30 md:px-20 sm:px-10 px-5 mx-auto my-12 ">
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-start gap-16 border rounded-2xl  border-accent p-8 shadow-xl ">
@@ -25,9 +29,18 @@ const JobsUnderCompany = ({ job }) => {
             </span>
           </div>
           <p className="text-gray-700">{job.description}</p>
-          <Link to={`/job/${job.id}`} className="btn btn-primary w-full mt-4">
+          <button
+            onClick={handleOpenModal}
+            className="btn btn-primary w-full mt-4"
+          >
             View Details
-          </Link>
+          </button>
+          <JobModal
+            isOpen={isModalOpen}
+            onClose={handleCloseModal}
+            job={job}
+            companyWebsite={ companyWebsite }
+          ></JobModal>
         </div>
       </div>
     </div>

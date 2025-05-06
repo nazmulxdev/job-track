@@ -33,7 +33,7 @@ const CompanyDetails = () => {
           <span className="text-primary"> {singleCompany.name}</span> Solutions
         </h1>
         {singleCompany?.jobs?.map((job) => (
-          <JobsUnderCompany key={job.id} job={job} />
+          <JobsUnderCompany key={job.id} job={job} companyWebsite={singleCompany.website} />
         ))}
       </div>
       <div className=" xl:px-40 lg:px-30 md:px-20 sm:px-10 px-5 mx-auto my-12 flex items-center justify-center">
