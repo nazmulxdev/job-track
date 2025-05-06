@@ -57,7 +57,7 @@ const ForgetPassword = () => {
             type="submit"
             className="w-full px-8 py-3 font-semibold rounded-md bg-violet-500 text-white hover:cursor-pointer"
           >
-            Confirm
+            Reset Password
           </button>
         </form>
         <div className="flex items-center w-full my-4">

@@ -8,6 +8,8 @@ import LogIn from "../Pages/LogIn";
 import Register from "../Pages/Register";
 import ForgetPassword from "../Pages/ForgetPassword";
 import PrivateRoute from "../Private/PrivateRoute";
+import UserProfile from "../Pages/UserProfile";
+import Blog from "../Pages/Blog";
 
 const Router = createBrowserRouter([
   {
@@ -28,6 +30,22 @@ const Router = createBrowserRouter([
         ),
         loader: () => fetch("/job-company.json"),
         hydrateFallbackElement: <LoaderDiv></LoaderDiv>,
+      },
+      {
+        path: "/profile",
+        element: (
+          <PrivateRoute>
+            <UserProfile></UserProfile>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/blog",
+        element: (
+          <PrivateRoute>
+            <Blog></Blog>
+          </PrivateRoute>
+        ),
       },
     ],
   },

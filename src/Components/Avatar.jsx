@@ -4,7 +4,7 @@ const Avatar = ({ currentUser }) => {
   console.log(currentUser.photoURL);
   return (
     <div className="avatar avatar-online">
-      <div className="w-10 sm:w-12 md:w-16 lg:w-20 xl:w-24 rounded-full">
+      <div className="w-8 sm:w-10 md:w-14 lg:w-16 xl:w-24 rounded-full">
         <img src={currentUser.photoURL} />
       </div>
     </div>
