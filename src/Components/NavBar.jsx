@@ -47,9 +47,9 @@ const NavBar = () => {
 
         {currentUser ? (
           <>
-            <Link to="/profile">
+            <NavLink to="/profile">
               <Avatar currentUser={currentUser}></Avatar>
-            </Link>
+            </NavLink>
           </>
         ) : (
           logInButtons

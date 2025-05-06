@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import AuthContext from "../Context/AuthContext";
-import { useLocation, useNavigation } from "react-router";
+import { Link, useLocation, useNavigation } from "react-router";
 
 const UserProfile = () => {
   const { logOut, currentUser } = useContext(AuthContext);
@@ -30,9 +30,12 @@ const UserProfile = () => {
         <p className="text-gray-600">{currentUser.email}</p>
       </div>
       <div className="mt-6 flex justify-between">
-        <button className="px-4 py-2 bg-violet-500 text-white rounded hover:bg-violet-600">
+        <Link
+          to="/updateProfile"
+          className="px-4 py-2 bg-violet-500 text-white rounded hover:bg-violet-600"
+        >
           Update Profile
-        </button>
+        </Link>
         <button
           onClick={handleLogOut}
           className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
