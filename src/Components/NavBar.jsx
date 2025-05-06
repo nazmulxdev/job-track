@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import navImage from "../assets/logo-violet.png";
 import Avatar from "./Avatar";
+import AuthContext from "../Context/AuthContext";
+import { Link } from "react-router";
 
 const NavBar = () => {
+  const { name } = useContext(AuthContext);
+  console.log(name);
   return (
     <div className="navbar shadow-accent xl:px-40 lg:px-30 md:px-20 sm:px-10 px-5   shadow-xl mx-auto py-4 justify-between">
       <div className="navbar-start">
@@ -55,8 +59,12 @@ const NavBar = () => {
       </div>
       <div className="flex items-center gap-4">
         <Avatar></Avatar>
-        <a className="btn btn-primary border-0">Log in</a>
-        <a className="btn btn-primary border-0">Register</a>
+        <Link to="/logIn" className="btn btn-primary border-0">
+          Log in
+        </Link>
+        <Link to="/register" className="btn btn-primary border-0">
+          Register
+        </Link>
       </div>
     </div>
   );

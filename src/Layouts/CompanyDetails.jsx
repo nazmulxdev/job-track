@@ -21,7 +21,6 @@ const CompanyDetails = () => {
   console.log(singleCompany.jobs);
   return (
     <div>
-      <NavBar></NavBar>
       <Suspense fallback={<LoaderDiv></LoaderDiv>}>
         <SingleDetailsCompany
           singleCompany={singleCompany}
@@ -33,7 +32,11 @@ const CompanyDetails = () => {
           <span className="text-primary"> {singleCompany.name}</span> Solutions
         </h1>
         {singleCompany?.jobs?.map((job) => (
-          <JobsUnderCompany key={job.id} job={job} companyWebsite={singleCompany.website} />
+          <JobsUnderCompany
+            key={job.id}
+            job={job}
+            companyWebsite={singleCompany.website}
+          />
         ))}
       </div>
       <div className=" xl:px-40 lg:px-30 md:px-20 sm:px-10 px-5 mx-auto my-12 flex items-center justify-center">
@@ -43,7 +46,6 @@ const CompanyDetails = () => {
           Go to previous page
         </Link>
       </div>
-      <Footer></Footer>
     </div>
   );
 };

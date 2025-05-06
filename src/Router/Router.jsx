@@ -4,6 +4,9 @@ import RootLayout from "../Layouts/RootLayout";
 import HomePage from "../Pages/HomePage";
 import CompanyDetails from "../Layouts/CompanyDetails";
 import LoaderDiv from "../Components/LoaderDiv";
+import LogIn from "../Pages/LogIn";
+import Register from "../Pages/Register";
+import ForgetPassword from "../Pages/ForgetPassword";
 
 const Router = createBrowserRouter([
   {
@@ -14,21 +17,27 @@ const Router = createBrowserRouter([
         index: true,
         element: <HomePage></HomePage>,
       },
+
+      {
+        path: "/company/:id",
+        element: <CompanyDetails></CompanyDetails>,
+        loader: () => fetch("/job-company.json"),
+        hydrateFallbackElement: <LoaderDiv></LoaderDiv>,
+      },
     ],
   },
-  {
-    path: "/company/:id",
-    element: <CompanyDetails></CompanyDetails>,
-    loader: () => fetch("/job-company.json"),
-    hydrateFallbackElement: <LoaderDiv></LoaderDiv>,
-  },
+
   {
     path: "/logIn",
-    element: <h1>log in</h1>,
+    element: <LogIn></LogIn>,
   },
   {
     path: "/register",
-    element: <h1>register</h1>,
+    element: <Register></Register>,
+  },
+  {
+    path: "/resetPassword",
+    element: <ForgetPassword></ForgetPassword>,
   },
 ]);
 
