@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import navImage from "../assets/logo-violet.png";
 import Avatar from "./Avatar";
 import AuthContext from "../Context/AuthContext";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const NavBar = () => {
   const { name } = useContext(AuthContext);
@@ -58,6 +58,9 @@ const NavBar = () => {
         </div>
       </div>
       <div className="flex items-center gap-4">
+        <NavLink to="/" className="text-xl">
+          Home
+        </NavLink>
         <Avatar></Avatar>
         <Link to="/logIn" className="btn btn-primary border-0">
           Log in
