@@ -41,6 +41,20 @@ const AuthProvider = ({ children }) => {
     return sendPasswordResetEmail(auth, email);
   };
 
+
+
+
+/**
+ * Swal.fire({
+  position: "top-end",
+  icon: "success",
+  title: "Your work has been saved",
+  showConfirmButton: false,
+  timer: 1500
+});
+ * 
+ * **/   
+
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (presentUser) => {
       setCurrentUser(presentUser);

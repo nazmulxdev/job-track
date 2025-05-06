@@ -9,8 +9,8 @@ import Register from "../Pages/Register";
 import ForgetPassword from "../Pages/ForgetPassword";
 import PrivateRoute from "../Private/PrivateRoute";
 import UserProfile from "../Pages/UserProfile";
-import Blog from "../Pages/Blog";
 import UpdateProfile from "../Pages/UpdateProfile";
+import ContactUs from "../Pages/ContactUs";
 
 const Router = createBrowserRouter([
   {
@@ -49,10 +49,10 @@ const Router = createBrowserRouter([
         ),
       },
       {
-        path: "/blog",
+        path: "/contactUs",
         element: (
           <PrivateRoute>
-            <Blog></Blog>
+            <ContactUs></ContactUs>
           </PrivateRoute>
         ),
       },

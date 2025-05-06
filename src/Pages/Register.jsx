@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router";
 import NavBar from "../Components/NavBar";
 import AuthContext from "../Context/AuthContext";
 import { auth } from "../FireBase/fireBase.config";
+import Footer from "../Components/Footer";
 
 const Register = () => {
   const { signInGoogle, setCurrentUser, createUser, updateUser } =
@@ -99,7 +100,7 @@ const Register = () => {
                 type="email"
                 name="email"
                 id="email"
-                placeholder="leroy@jenkins.com"
+                placeholder="Your Email"
                 className="w-full px-3 py-2 border border-violet-500 text-violet-600 rounded-md "
               />
             </div>
@@ -171,6 +172,7 @@ const Register = () => {
           </Link>
         </p>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

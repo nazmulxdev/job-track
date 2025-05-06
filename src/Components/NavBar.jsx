@@ -14,14 +14,14 @@ const NavBar = () => {
       <Link
         to="/logIn"
         state={location.state}
-        className="btn btn-primary border-0"
+        className="btn btn-primary btn-sm md:btn-md border-0"
       >
         Log in
       </Link>
       <Link
         to="/register"
         state={location.state}
-        className="btn btn-primary border-0"
+        className="btn btn-primary btn-sm md:btn-md border-0"
       >
         Register
       </Link>
@@ -37,12 +37,12 @@ const NavBar = () => {
           </h1>
         </div>
       </div>
-      <div className="flex items-center gap-4">
-        <NavLink to="/" className="text-lg">
+      <div className="flex items-center gap-1 md:gap-4">
+        <NavLink to="/" className="text-base sm:text-lg">
           Home
         </NavLink>
-        <NavLink to="/blog" className="text-lg">
-          Blogs
+        <NavLink to="/contactUs" className="text-base sm:text-lg">
+          Contact Us
         </NavLink>
 
         {currentUser ? (

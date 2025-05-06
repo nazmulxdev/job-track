@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 import NavBar from "../Components/NavBar";
 import AuthContext from "../Context/AuthContext";
+import Footer from "../Components/Footer";
 
 const LogIn = () => {
   const { signInGoogle, setCurrentUser, signInEmail } = useContext(AuthContext);
@@ -63,7 +64,7 @@ const LogIn = () => {
                 type="email"
                 name="email"
                 id="email"
-                placeholder="leroy@jenkins.com"
+                placeholder="Your Email"
                 className="w-full px-3 py-2 border border-violet-500 text-violet-600 rounded-md "
                 onChange={(event) => setCurrentEmail(event.target.value)}
               />
@@ -136,6 +137,7 @@ const LogIn = () => {
           </p>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router";
 import NavBar from "../Components/NavBar";
 import AuthContext from "../Context/AuthContext";
+import Footer from "../Components/Footer";
 
 const ForgetPassword = () => {
   const { resetPassword } = useContext(AuthContext);
@@ -48,7 +49,7 @@ const ForgetPassword = () => {
                 value={previousEmail}
                 onChange={(e) => setPreviousEmail(e.target.value)}
                 id="email"
-                placeholder="leroy@jenkins.com"
+                placeholder="Your Email"
                 className="w-full px-3 py-2 border border-violet-500 text-violet-600 rounded-md "
               />
             </div>
@@ -76,6 +77,7 @@ const ForgetPassword = () => {
           </Link>
         </p>
       </div>
+      <Footer></Footer>
     </div>
   );
 };
