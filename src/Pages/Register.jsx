@@ -6,11 +6,16 @@ import { auth } from "../FireBase/fireBase.config";
 import Footer from "../Components/Footer";
 
 const Register = () => {
-  const { signInGoogle, setCurrentUser, createUser, updateUser } =
-    useContext(AuthContext);
+  const {
+    signInGoogle,
+    setCurrentUser,
+    createUser,
+    updateUser,
+    sweetError,
+    sweetSuccess,
+  } = useContext(AuthContext);
   const [errorText, setErrorText] = useState(null);
   const location = useLocation();
-  console.log(location);
   const navigate = useNavigate();
   const handleRegister = (event) => {
     event.preventDefault();
@@ -20,9 +25,8 @@ const Register = () => {
     const password = event.target.password.value;
 
     createUser(email, password)
-      .then((result) => {
-        const user = result.user;
-        console.log(user);
+      .then(() => {
+        // const user = result.user;
 
         const profile = {
           displayName: name,
@@ -31,15 +35,16 @@ const Register = () => {
 
         updateUser(profile).then(() => {
           setCurrentUser(auth.currentUser);
+          const successMessage = "You have successfully register";
+          sweetSuccess(successMessage);
           navigate(`${location.state ? location.state : "/"}`);
         });
       })
       .catch((error) => {
         const errorMessage = error.message;
+        sweetError(errorMessage);
         setErrorText(errorMessage);
       });
-
-    console.log(name, photoURL, email, password);
   };
 
   const handleGoogleLogIn = () => {
@@ -47,10 +52,13 @@ const Register = () => {
       .then((loggedUser) => {
         const user = loggedUser.user;
         setCurrentUser(user);
+        const successMessage = "You have successfully register";
+        sweetSuccess(successMessage);
         navigate(`${location.state ? location.state : "/"}`);
       })
       .catch((error) => {
         const errorMessage = error.message;
+        sweetError(errorMessage);
         setErrorText(errorMessage);
       });
   };

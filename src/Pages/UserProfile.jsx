@@ -11,8 +11,6 @@ const UserProfile = () => {
       navigate(`${location.state ? location.state : "/"}`);
     });
   };
-
-  console.log(currentUser);
   useEffect(() => {
     document.title = "JobTrack | Profile";
   }, []);

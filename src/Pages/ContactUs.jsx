@@ -1,6 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
+import AuthContext from "../Context/AuthContext";
 
 const ContactUs = () => {
+  const { sweetSuccess } = useContext(AuthContext);
+  const successMessage =
+    "Email sent Successful.Please be patience and wait for our response.";
+  const handleMessage = () => {
+    sweetSuccess(successMessage);
+  };
   useEffect(() => {
     document.title = "JobTrack | ContactUs";
   }, []);
@@ -9,7 +16,7 @@ const ContactUs = () => {
       <h2 className="text-3xl font-bold text-primary mb-6 text-center">
         Contact HR / Admin
       </h2>
-      <form className="space-y-4">
+      <form action={handleMessage} className="space-y-4">
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Your Name

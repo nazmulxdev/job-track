@@ -13,8 +13,6 @@ const ForgetPassword = () => {
       setPreviousEmail(location.state.currentEmail);
     }
   }, [location]);
-
-  console.log(previousEmail);
   useEffect(() => {
     document.title = "JobTrack | ResetPassword";
   }, []);

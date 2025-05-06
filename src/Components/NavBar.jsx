@@ -7,24 +7,23 @@ import { Link, NavLink, useLocation } from "react-router";
 const NavBar = () => {
   const { currentUser } = useContext(AuthContext);
   const location = useLocation();
-  console.log(location);
 
   const logInButtons = (
     <>
-      <Link
+      <NavLink
         to="/logIn"
         state={location.state}
-        className="btn btn-primary btn-sm md:btn-md border-0"
+        className="font-bold text-[0.75rem] sm:text-lg"
       >
         Log in
-      </Link>
-      <Link
+      </NavLink>
+      <NavLink
         to="/register"
         state={location.state}
-        className="btn btn-primary btn-sm md:btn-md border-0"
+        className="font-bold text-[0.75rem] sm:text-lg"
       >
         Register
-      </Link>
+      </NavLink>
     </>
   );
   return (
@@ -38,11 +37,14 @@ const NavBar = () => {
         </div>
       </div>
       <div className="flex items-center gap-1 md:gap-4">
-        <NavLink to="/" className="text-base sm:text-lg">
+        <NavLink to="/" className="font-bold text-[0.75rem] sm:text-lg">
           Home
         </NavLink>
-        <NavLink to="/contactUs" className="text-base sm:text-lg">
-          Contact Us
+        <NavLink
+          to="/contactUs"
+          className="font-bold text-[0.75rem] sm:text-lg"
+        >
+          ContactUs
         </NavLink>
 
         {currentUser ? (

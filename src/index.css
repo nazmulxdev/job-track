@@ -23,4 +23,5 @@
 
 .active {
   color: #8f00ff;
+  text-decoration: underline;
 }

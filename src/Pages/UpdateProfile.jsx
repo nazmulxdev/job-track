@@ -67,6 +67,16 @@ const UpdateProfile = () => {
           Update Profile
         </button>
       </form>
+      <div className="flex items-center w-full my-4">
+        <hr className="w-full border-t-2 border-violet-500 my-4" />
+        <hr className="w-full border-t-2 border-violet-500 my-4" />
+      </div>
+      <p className="text-center">
+        Have changed mind?{" "}
+        <Link to="/profile" className="text-primary">
+          go back!!
+        </Link>
+      </p>
     </div>
   );
 };

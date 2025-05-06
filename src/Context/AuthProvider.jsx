@@ -11,8 +11,24 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../FireBase/fireBase.config";
+import Swal from "sweetalert2";
 
 const AuthProvider = ({ children }) => {
+  const sweetSuccess = (alertMessage) => {
+    Swal.fire({
+      title: `${alertMessage}`,
+      icon: "success",
+      draggable: true,
+    });
+  };
+  const sweetError = (alertMessage) => {
+    Swal.fire({
+      title: `${alertMessage}`,
+      icon: "error",
+      draggable: true,
+    });
+  };
+
   const [currentUser, setCurrentUser] = useState(null);
   const [loader, setLoader] = useState(true);
   const provider = new GoogleAuthProvider();
@@ -40,21 +56,6 @@ const AuthProvider = ({ children }) => {
   const resetPassword = (email) => {
     return sendPasswordResetEmail(auth, email);
   };
-
-
-
-
-/**
- * Swal.fire({
-  position: "top-end",
-  icon: "success",
-  title: "Your work has been saved",
-  showConfirmButton: false,
-  timer: 1500
-});
- * 
- * **/   
-
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (presentUser) => {
       setCurrentUser(presentUser);
@@ -64,7 +65,6 @@ const AuthProvider = ({ children }) => {
       unSubscribe();
     };
   }, []);
-  console.log(currentUser);
 
   const user = {
     loader,
@@ -76,6 +76,8 @@ const AuthProvider = ({ children }) => {
     signInGoogle,
     logOut,
     resetPassword,
+    sweetSuccess,
+    sweetError,
   };
   return <AuthContext value={user}>{children}</AuthContext>;
 };

@@ -5,12 +5,17 @@ import AuthContext from "../Context/AuthContext";
 import Footer from "../Components/Footer";
 
 const LogIn = () => {
-  const { signInGoogle, setCurrentUser, signInEmail } = useContext(AuthContext);
+  const {
+    signInGoogle,
+    setCurrentUser,
+    signInEmail,
+    sweetError,
+    sweetSuccess,
+  } = useContext(AuthContext);
   const [errorText, setErrorText] = useState(null);
   const [currentEmail, setCurrentEmail] = useState("");
   const location = useLocation();
   const navigate = useNavigate();
-  console.log(location);
   const handleLogIn = (event) => {
     event.preventDefault();
     const email = event.target.email.value;
@@ -18,11 +23,14 @@ const LogIn = () => {
     signInEmail(email, password)
       .then((result) => {
         const user = result.user;
+        const successMessage = "You have successfully Logged in";
         setCurrentUser(user);
+        sweetSuccess(successMessage);
         navigate(`${location.state ? location.state : "/"}`);
       })
       .catch((error) => {
         const errorMessage = error.message;
+        sweetError(errorMessage);
         setErrorText(errorMessage);
       });
   };
@@ -31,11 +39,14 @@ const LogIn = () => {
     signInGoogle()
       .then((loggedUser) => {
         const user = loggedUser.user;
+        const successMessage = "You have successfully Logged in";
         setCurrentUser(user);
+        sweetSuccess(successMessage);
         navigate(`${location.state ? location.state : "/"}`);
       })
       .catch((error) => {
         const errorMessage = error.message;
+        sweetError(errorMessage);
         setErrorText(errorMessage);
       });
   };

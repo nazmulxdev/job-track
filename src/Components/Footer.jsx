@@ -5,11 +5,14 @@ const Footer = () => {
   return (
     <footer className="footer footer-horizontal footer-center bg-accent text-base-content rounded p-10">
       <nav className="grid grid-flow-col gap-4">
-        <NavLink to="/" className="text-base sm:text-lg">
+        <NavLink to="/" className="font-bold text-[0.75rem] sm:text-lg">
           Home
         </NavLink>
-        <NavLink to="/contactUs" className="text-base sm:text-lg">
-          Contact Us
+        <NavLink
+          to="/contactUs"
+          className="font-bold text-[0.75rem] sm:text-lg"
+        >
+          ContactUs
         </NavLink>
       </nav>
       <nav>
