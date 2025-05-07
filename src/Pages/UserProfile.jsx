@@ -15,7 +15,6 @@ const UserProfile = () => {
       });
     });
   };
-  console.log(navigate);
   useEffect(() => {
     document.title = "JobTrack | Profile";
   }, []);
