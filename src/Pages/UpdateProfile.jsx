@@ -4,7 +4,7 @@ import AuthContext from "../Context/AuthContext";
 import { auth } from "../FireBase/fireBase.config";
 
 const UpdateProfile = () => {
-  const { updateUser, setCurrentUser } = useContext(AuthContext);
+  const { updateUser, setCurrentUser, sweetSuccess } = useContext(AuthContext);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -20,7 +20,9 @@ const UpdateProfile = () => {
       photoURL: photoURL,
     };
     updateUser(profile).then(() => {
+      const successMessage = "You have updated your profile successfully";
       setCurrentUser(auth.currentUser);
+      sweetSuccess(successMessage);
       navigate("/profile");
     });
   };
@@ -43,6 +45,7 @@ const UpdateProfile = () => {
               type="text"
               name="name"
               id="name"
+              required
               placeholder="your name"
               className="w-full px-3 py-2 border border-primary text-primary rounded-md "
             />
@@ -55,6 +58,7 @@ const UpdateProfile = () => {
               type="text"
               name="photoURL"
               id="photoURL"
+              required
               placeholder="your photoURL"
               className="w-full px-3 py-2 border border-primary text-primary rounded-md "
             />

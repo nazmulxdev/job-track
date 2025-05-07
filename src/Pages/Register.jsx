@@ -54,7 +54,7 @@ const Register = () => {
         setCurrentUser(user);
         const successMessage = "You have successfully register";
         sweetSuccess(successMessage);
-        navigate(`${location.state ? location.state : "/"}`);
+        navigate("/");
       })
       .catch((error) => {
         const errorMessage = error.message;
@@ -88,6 +88,7 @@ const Register = () => {
                 type="text"
                 name="name"
                 id="name"
+                required
                 placeholder="Your Full Name"
                 className="w-full px-3 py-2 border border-primary text-primary rounded-md mb-4"
               />
@@ -98,6 +99,7 @@ const Register = () => {
                 type="text"
                 name="photoURL"
                 id="photoURL"
+                required
                 placeholder="Your Photo URL"
                 className="w-full px-3 py-2 border border-primary text-primary rounded-md mb-4"
               />
