@@ -1,16 +1,21 @@
 import React, { useContext, useEffect } from "react";
 import AuthContext from "../Context/AuthContext";
-import { Link, useLocation, useNavigation } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 
 const UserProfile = () => {
-  const { logOut, currentUser } = useContext(AuthContext);
+  const { logOut, currentUser, sweetSuccess } = useContext(AuthContext);
+  const navigate = useNavigate();
   const location = useLocation();
-  const navigate = useNavigation();
+  console.log(location);
   const handleLogOut = () => {
     logOut().then(() => {
-      navigate(`${location.state ? location.state : "/"}`);
+      const successMessage = "You have logged out";
+      sweetSuccess(successMessage).then(() => {
+        navigate("/");
+      });
     });
   };
+  console.log(navigate);
   useEffect(() => {
     document.title = "JobTrack | Profile";
   }, []);

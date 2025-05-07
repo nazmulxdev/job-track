@@ -15,14 +15,14 @@ import Swal from "sweetalert2";
 
 const AuthProvider = ({ children }) => {
   const sweetSuccess = (alertMessage) => {
-    Swal.fire({
+    return Swal.fire({
       title: `${alertMessage}`,
       icon: "success",
       draggable: true,
     });
   };
   const sweetError = (alertMessage) => {
-    Swal.fire({
+    return Swal.fire({
       title: `${alertMessage}`,
       icon: "error",
       draggable: true,
