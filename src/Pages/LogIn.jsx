@@ -62,8 +62,8 @@ const LogIn = () => {
           Login to your account
         </h2>
         <div className="flex items-center w-full my-4">
-          <hr className="w-full border-t-2 border-violet-500 my-4" />
-          <hr className="w-full border-t-2 border-violet-500 my-4" />
+          <hr className="w-full border-t-2 border-primary my-4" />
+          <hr className="w-full border-t-2 border-primary my-4" />
         </div>
         <form onSubmit={handleLogIn} className="space-y-8">
           <div className="space-y-4">
@@ -76,7 +76,7 @@ const LogIn = () => {
                 name="email"
                 id="email"
                 placeholder="Your Email"
-                className="w-full px-3 py-2 border border-violet-500 text-violet-600 rounded-md "
+                className="w-full px-3 py-2 border border-primary text-primary rounded-md "
                 onChange={(event) => setCurrentEmail(event.target.value)}
               />
             </div>
@@ -89,7 +89,7 @@ const LogIn = () => {
                   rel="noopener noreferrer"
                   to="/resetPassword"
                   state={{ currentEmail }}
-                  className="text-xs hover:underline font-medium text-violet-500"
+                  className="text-xs hover:underline font-medium text-primary"
                 >
                   Forgot password?
                 </Link>
@@ -100,28 +100,28 @@ const LogIn = () => {
                 id="password"
                 placeholder="*****"
                 className="w-full px-3 py-2 border rounded-md 
-              border-violet-500 text-violet-600"
+              border-primary text-primary"
               />
             </div>
           </div>
           <button
             type="submit"
-            className="w-full px-8 py-3 font-semibold rounded-md bg-violet-500 text-white"
+            className="w-full px-8 py-3 font-semibold rounded-md bg-primary text-white"
           >
             Log in
           </button>
         </form>
         <div className="flex items-center w-full my-4">
-          <hr className="w-full border-t-2 border-violet-500 my-4" />
+          <hr className="w-full border-t-2 border-primary my-4" />
           <p className="px-3 ">OR</p>
-          <hr className="w-full border-t-2 border-violet-500 my-4" />
+          <hr className="w-full border-t-2 border-primary my-4" />
         </div>
         <div className="my-6 space-y-4">
           <button
             onClick={handleGoogleLogIn}
             aria-label="Login with Google"
             type="button"
-            className="flex items-center justify-center w-full p-4 space-x-4 rounded-md focus:ring-2 focus:ring-offset-1 hover:bg-violet-600 text-violet-500 border-2 bg-white  hover:border hover:text-white hover:cursor-pointer"
+            className="flex items-center justify-center w-full p-4 space-x-4 rounded-md focus:ring-2 focus:ring-offset-1 hover:bg-primary text-primary border-2 bg-white  hover:border hover:text-white hover:cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +141,7 @@ const LogIn = () => {
               to="/register"
               state={location.state}
               rel="noopener noreferrer"
-              className="focus:underline hover:underline text-primary underline"
+              className="focus:underline hover:underline text-primary"
             >
               Register here
             </Link>

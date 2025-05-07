@@ -20,9 +20,9 @@ const UserProfile = () => {
         <img
           src={currentUser.photoURL || "https://i.ibb.co/0GF8Ydx/user.png"}
           alt="Profile"
-          className="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-violet-500"
+          className="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-primary"
         />
-        <h2 className="text-xl font-semibold text-violet-600">
+        <h2 className="text-xl font-semibold text-primary">
           {currentUser.displayName || "No Name"}
         </h2>
         <p className="text-gray-600">{currentUser.email}</p>
@@ -30,7 +30,7 @@ const UserProfile = () => {
       <div className="mt-6 flex justify-between">
         <Link
           to="/updateProfile"
-          className="px-4 py-2 bg-violet-500 text-white rounded hover:bg-violet-600"
+          className="px-4 py-2 bg-secondary text-white rounded hover:bg-primary"
         >
           Update Profile
         </Link>
