@@ -2,11 +2,21 @@ import React, { useContext } from "react";
 import navImage from "../assets/logo-violet.png";
 import Avatar from "./Avatar";
 import AuthContext from "../Context/AuthContext";
-import { Link, NavLink, useLocation } from "react-router";
+import { Link, NavLink, useLocation, useNavigate } from "react-router";
 
 const NavBar = () => {
-  const { currentUser } = useContext(AuthContext);
+  const { currentUser, logOut, sweetSuccess } = useContext(AuthContext);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleLogOut = () => {
+    logOut().then(() => {
+      const successMessage = "You have logged out";
+      sweetSuccess(successMessage).then(() => {
+        navigate("/");
+      });
+    });
+  };
 
   const logInButtons = (
     <>
@@ -52,6 +62,9 @@ const NavBar = () => {
             <NavLink to="/profile">
               <Avatar currentUser={currentUser}></Avatar>
             </NavLink>
+            <button onClick={handleLogOut} className="btn btn-primary btn-sm">
+              LogOut
+            </button>
           </>
         ) : (
           logInButtons
